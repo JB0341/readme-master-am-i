@@ -1,12 +1,13 @@
+// TODO: Include packages needed for this application
 console.log('boomSAUCE');
 
 const fs = require('fs');
 const colors = require('colors');
 const inquirer = require ('inquirer');
-const generateMarkdown = require('./develope/generateMarkdown.js');
-//used inquirer to genterate questions
-inquirer
-.prompt([
+const generateMarkdown = require('./generateMarkdown');
+
+// TODO: Create an array of questions for user input
+const questions = [
     {
         type: "input",
         name: "title",
@@ -50,34 +51,45 @@ inquirer
         choices:['The MIT License', 'The GPL License', 'Apache License', 'GNU License'],
         validate: (value)=>{ if(value){return true} else {return 'please select license to continue!'}} 
     }
-])
-.then(({
-    title,
-    description,
-    installation,
-    usage,
-    contributing,
-    tests,
-    license
-})=>{
-    const questions = 
-})
+];
 
 
 
 
 
 
-// TODO: Include packages needed for this application
 
-// TODO: Create an array of questions for user input
-const questions = [];
+
 
 // TODO: Create a function to write README file
-function writeToFile(fileName, data) {}
+const writeToFile = fileContent => {
+    return new Promise((resolve, reject) => {
+        fs.writeFile('./generatedREADME.md', fileContent, err => {
+            if (err) {
+                reject(err);
+                return;
+            }
+            resolve({
+                ok: true
+            });
+        })
+    })
+}
 
 // TODO: Create a function to initialize app
-function init() {}
+function init() {
+    inquirer.prompt(questions)
+    .then(function(data) {
+        console.log(data);
+        let fileContent = generateMarkdown(data);
+        writeToFile(fileContent)
+    });
+}
 
 // Function call to initialize app
 init();
+
+
+// Exports
+
+module.exports = questions; 
