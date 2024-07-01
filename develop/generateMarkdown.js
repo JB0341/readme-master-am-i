@@ -69,22 +69,22 @@ function generateMarkdown(data) {
 
   
   ## Description:
-  ### ${data.description}
+  - ${data.description}
   
   ## Installation:
   ### Install all listed below to get this app to function:
-  ### ${data.installation}
+  - ${data.installation}
   
   ## Usage
-  ### ${data.usage}
+  - ${data.usage}
 
   ## Contributing
   ### Content listed below is open for contributing/collaborating
-  ### ${data.contributing}
+  - ${data.contributing}
 
   ## Tests:
   ### Run these commands in terminal to test the app:
-  ### ${data.tests}
+  - ${data.tests}
 
 `;
 }
