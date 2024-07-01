@@ -34,13 +34,13 @@ const questions = [
     },
     {
         type: "input",
-        name: "Contributing",
+        name: "contributing",
         message: "How would you like others to contribute?",
         validate: (value)=>{ if(value){return true} else {return 'please input value to continue!'}}
     },
     {
         type: "input",
-        name: "Tests",
+        name: "tests",
         message: "Any testing Guidelines?",
         validate: (value)=>{ if(value){return true} else {return 'please input value to continue!'}}
     },

@@ -1,4 +1,4 @@
-# not sure
+# dunno yet
 
   ## License: undefined 
   ### 
@@ -13,20 +13,20 @@
 
   
   ## Description:
-  ### still planning
+  - still thinking
   
   ## Installation:
   ### Install all listed below to get this app to function:
-  ### not yet
+  - no
   
   ## Usage
-  ### itll be used
+  - itll be used
 
   ## Contributing
   ### Content listed below is open for contributing/collaborating
-  ### undefined
+  - eh
 
   ## Tests:
   ### Run these commands in terminal to test the app:
-  ### undefined
+  - undefined
 
