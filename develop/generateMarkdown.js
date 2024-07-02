@@ -8,8 +8,8 @@ const index = require('./index');
 // If there is no license, return an empty string
 function renderLicenseBadge(license) {
   let badge = '';
-  if(license === 'The MIT License') {
-    badge = '[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)'
+  if(license === 'Mozilla') {
+    badge = '[![License: MPL 2.0](https://img.shields.io/badge/License-MPL_2.0-brightgreen.svg)](https://opensource.org/licenses/MPL-2.0)'
   } else if (license === 'Apache License') {
     badge = '[![License](https://img.shields.io/badge/License-Apache_2.0-blue.svg)](https://opensource.org/licenses/Apache-2.0)'
   } else if (license === 'GNU License') {
@@ -24,10 +24,10 @@ function renderLicenseBadge(license) {
 // If there is no license, return an empty string
 function renderLicenseLink(license) {
   let licenseLink = '';
-  if(license === 'The MIT License') {
-    licenseLink = 'https://opensource.org/license/MIT'
+  if(license === 'Mozilla') {
+    licenseLink = 'https://www.mozilla.org/en-US/MPL/2.0/'
   } else if (license === 'Apache License') {
-    licenseLink = 'https://opensource.org/license/apache-2-0'
+    licenseLink = 'https://www.apache.org/licenses/LICENSE-2.0'
   } else if (license === 'GNU License') {
     licenseLink = 'https://www.gnu.org/licenses/gpl-3.0'
   } else {
