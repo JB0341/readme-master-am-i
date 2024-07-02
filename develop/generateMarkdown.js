@@ -9,13 +9,11 @@ const index = require('./index');
 function renderLicenseBadge(license) {
   let badge = '';
   if(license === 'The MIT License') {
-    badge = ''
-  } else if (license === 'The GPL License') {
-    badge = ''
+    badge = '[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)'
   } else if (license === 'Apache License') {
-    badge = ''
+    badge = '[![License](https://img.shields.io/badge/License-Apache_2.0-blue.svg)](https://opensource.org/licenses/Apache-2.0)'
   } else if (license === 'GNU License') {
-    badge = ''
+    badge = '[l-3.0)![License: GPL v3](https://img.shields.io/badge/License-GPLv3-blue.svg)](https://www.gnu.org/licenses/gp'
   } else {
     badge = ''
   }
@@ -27,13 +25,11 @@ function renderLicenseBadge(license) {
 function renderLicenseLink(license) {
   let licenseLink = '';
   if(license === 'The MIT License') {
-    licenseLink = ''
-  } else if (license === 'The GPL License') {
-    licenseLink = ''
+    licenseLink = 'https://opensource.org/license/MIT'
   } else if (license === 'Apache License') {
-    licenseLink = ''
+    licenseLink = 'https://opensource.org/license/apache-2-0'
   } else if (license === 'GNU License') {
-    licenseLink = ''
+    licenseLink = 'https://www.gnu.org/licenses/gpl-3.0'
   } else {
     licenseLink = ''
   }

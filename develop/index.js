@@ -48,7 +48,7 @@ const questions = [
         type: "list",
         name: "License",
         message: "Choose your license.",
-        choices:['The MIT License', 'The GPL License', 'Apache License', 'GNU License'],
+        choices:['The MIT License', 'Apache License', 'GNU License'],
         validate: (value)=>{ if(value){return true} else {return 'please select license to continue!'}} 
     }
 ];
